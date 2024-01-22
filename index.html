@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- Using Tailwind and Daisyui CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Fonts for google font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<Style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+
+    }
+</Style>
+
+<!-- customized my config -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-all':'#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-manrope">
+    
+    <header class="container px-8 lg:px-24 mx-auto py-8">
+        <!-- nav bar started -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-[#FF4240]"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class=" text-3xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                  <a class="btn btn-ghost text-xl"></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#FF4240]"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex lg:gap-4">
+                    <div>
+                        <img src="Images/Frame (1).svg" alt="">
+                      </div>
+                    <div class="btn-all">
+                        <button class="bg-[#FF4240] text-white lg:px-6 lg:py-3 rounded-lg font-bold">Get Ticket</button>
+                        <!-- <a class="btn ">Get Ticket</a> -->
+                      </div>
+                      
+                </div>
+                
+              </div>
+            </nav>
+       <!-- nav bar finished-->     
+       
+       <!-- banner section started  -->
+       <section class="py-14">
+        <div class="carousel w-full rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full ">
+              <img src="Images/banner2.jpeg" class="w-full " />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+                      
+        </div>
+        <div class="bg-black w-1/2  h-40 rounded-md">
+            <h2>Meet all the heroes from the field</h2>
+            <p>The biggest prize and the most cherished victory in hockey alongside the Olympics. Every four years, at the Hockey World Cup the world’s greatest teams play some of the toughest, most skillful and entertaining international hockey imaginable.</p>
+        </div>
+        
+
+       </section>
+        
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
